@@ -296,9 +296,9 @@ module.exports = {
   getCardId,
 };
 
-console.log(
-  concatenateStrings("", "bb"),
-  getStringLength(""),
-  getStringFromTemplate("jon", 3)
+// console.log(
+//   concatenateStrings("", "bb"),
+//   getStringLength(""),
+//   getStringFromTemplate("jon", 3)
 
-  );
+//   );
