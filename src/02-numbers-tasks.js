@@ -176,8 +176,10 @@ function parseNumberFromString(/* value */) {
  *   3,3,3   => 5.196152422706632
  *   1,2,3   => 3.741657386773941
  */
-function getParallelipidedDiagonal(/* a, b, c */) {
-  throw new Error('Not implemented');
+function getParallelipidedDiagonal(a, b, c) {
+  let diagonal = 0;
+  diagonal = Math.sqrt(a ** 2 + b ** 2 + c ** 2);
+  return diagonal;
 }
 
 /**
@@ -198,6 +200,9 @@ function getParallelipidedDiagonal(/* a, b, c */) {
  *   1678, 3  => 2000
  */
 function roundToPowerOfTen(/* num, pow */) {
+  // return (
+  //   pow === 0 ? num : (num - (num % (10 ** pow)) + 10)
+  // );
   throw new Error('Not implemented');
 }
 
