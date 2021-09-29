@@ -51,10 +51,16 @@ function getCicleCircumference(radius) {
  *  10, 0  => 5
  *  -3, 3  => 0
  */
-function getAverage(/* value1, value2 */) {
+function getAverage(value1, value2) {
   // const avarage = Math.floor(Math.abs((value1 + value2)) / 2);
-  // return avarage;
-  throw new Error('Not implemented');
+  // // return avarage;;
+  // return (value1 * 1 + value2 * 1) / 2;
+  let result = 0;
+  result = (value1 + value2) / 2;
+  if (result === Infinity) {
+    result = 1.7976931348623157e+308;
+  }
+  return result;
 }
 
 /**
@@ -188,8 +194,9 @@ function getParallelipidedDiagonal(a, b, c) {
  *   1678, 2  => 1700
  *   1678, 3  => 2000
  */
-function roundToPowerOfTen(/* num, pow */) {
-  throw new Error('Not implemented');
+function roundToPowerOfTen(num, pow) {
+  const result = Math.round(num / (10 ** pow)) * (10 ** pow);
+  return result;
 }
 
 /**
